@@ -1,0 +1,124 @@
+/* quizz.component.css */
+
+.quizz__container{
+  width: 80%;
+  margin: auto;
+  margin-top: 100px; /* Este valor empurra o quiz para baixo, abaixo do título "BuzzFeed" */
+}
+
+.quizz_logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.quizz_questions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:1px solid limegreen;
+  border-radius: 8px;
+  background-color: transparent;
+  width: 50%;
+  height: 100px; /* Mantenha se quiser altura fixa para a caixa da pergunta */
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'Segoe UI';
+}
+
+.quizz_questions > h3 {
+  width: 100%;
+  text-align: center !important;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  white-space: normal;
+  box-sizing: border-box;
+}
+
+.quizz_options{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.btn-option{
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #18ab29;
+  width: 50%; /* Pode ser ajustado para controlar o tamanho dos botões */
+  display: inline-block; /* Mantém os botões na mesma linha, se houver espaço */
+  cursor: pointer;
+  color: red;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  /* Adicione margem para espaçar os botões entre si, se necessário */
+  margin: 10px; /* Exemplo: Espaçamento entre os botões */
+}
+
+.btn-option:hover{
+  background-color: #5cbf2a;
+}
+
+.btn-option:active{
+  position: relative;
+  top:1px;
+}
+
+.quizz_results{
+  width: 50%;
+  /* Removi a altura fixa (height: 100px;) daqui para permitir que o conteúdo se ajuste */
+  /* height: 100px; */
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid limegreen;
+  padding: 30px;
+  display: flex;
+  flex-direction: column; /* Organiza os itens (título, resultado, frase, imagem) em coluna */
+  justify-content: center;
+  align-items: center; /* Centraliza horizontalmente */
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.quizz_results > h1,
+.quizz_results > p {
+  text-align: center !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* ESTILO PARA A CHAMADA PARA AÇÃO */
+.call-to-action {
+    margin-top: 20px; /* Espaço entre o resultado (parágrafo p) e a nova frase */
+    margin-bottom: 10px; /* VALOR AJUSTADO: 50% menos (de 20px para 10px) entre a frase e a imagem */
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: red; /* Cor do texto (ajuste se precisar) */
+    text-align: center;
+    max-width: 80%; /* Para que a frase não fique muito larga em telas grandes */
+    box-sizing: border-box;
+}
+
+/* ESTILO PARA O ENVOLTÓRIO DA IMAGEM DO RESULTADO */
+.result-image-wrapper {
+  margin-top: 0px; /* Este valor empurra a imagem para baixo do conteúdo acima */
+                     /* Mantenha este valor ou ajuste-o, se precisar de mais espaço TOTAL */
+  text-align: center; /* Centraliza a imagem se o wrapper for maior */
+}
+
+.result-image-wrapper img {
+  max-width: 100%; /* Garante que a imagem se ajuste ao tamanho do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Garante que as margens funcionem corretamente */
+  margin: 0 auto; /* Centraliza a imagem dentro do seu wrapper */
+}

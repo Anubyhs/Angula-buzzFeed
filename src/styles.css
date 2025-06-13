@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  padding:0;
+  margin:0;
+  border:0;
+  box-sizing: border-box;
+  color:red;
+}
+
+body{
+  background-color: #87CEEB;
+  padding-top: 20px; /* Diminuído consideravelmente para reduzir o espaço entre o título e o conteúdo */
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 90px;
+  color: red;
+  text-shadow: 
+    -2px -2px 0 limegreen,
+    2px -2px 0 limegreen,
+    -2px 2px 0 limegreen,
+    2px 2px 0 limegreen;
+  background-color: #87CEEB; /* Para cobrir o conteúdo por baixo */
+  z-index: 999; /* Para garantir que fique acima do conteúdo, mas abaixo do botão home */
+  padding: 10px 0; /* Padding interno para o texto do título */
+}
+
+.home-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+}
+
+.home-button .fas {
+  font-size: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+  color: red; /* Cor do ícone */
+}
